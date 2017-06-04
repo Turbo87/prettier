@@ -43,3 +43,16 @@ exports[`basic-html.hbs 1`] = `
 </html>
 
 `;
+
+exports[`more-html.html 1`] = `
+<a href="#">Anchor</a>
+
+<div hidden class="foo" id=bar></div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<a href="#">Anchor</a>
+<div hidden
+  class="foo"
+  id="bar" />
+
+`;
