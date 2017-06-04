@@ -44,6 +44,8 @@ function normalize(options) {
     normalized.parser = "graphql";
   } else if (/\.json$/.test(filepath)) {
     normalized.parser = "json";
+  } else if (/\.hbs$/.test(filepath)) {
+    normalized.parser = "glimmer";
   }
 
   if (normalized.parser === "json") {
