@@ -60,6 +60,8 @@ function getPrintFunction(options) {
     case "less":
     case "scss":
       return require("./printer-postcss");
+    case "handlebars":
+      return require("./printer-handlebars");
     default:
       return genericPrintNoParens;
   }
