@@ -2,6 +2,31 @@
 # yarn lockfile v1
 
 
+"@glimmer/interfaces@^0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.29.0.tgz#6585e030e0e49932a522e3aa49f6e6bd1b54cc59"
+  dependencies:
+    "@glimmer/wire-format" "^0.29.0"
+
+"@glimmer/syntax@0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.29.0.tgz#c0dbb39a40b1644c55e6a6248b8c8da9f655c5bd"
+  dependencies:
+    "@glimmer/interfaces" "^0.29.0"
+    "@glimmer/util" "^0.29.0"
+    handlebars "^4.0.6"
+    simple-html-tokenizer "^0.3.0"
+
+"@glimmer/util@^0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.29.0.tgz#abd8a5e242236c55d0bf6781dcbfe28157c215d3"
+
+"@glimmer/wire-format@^0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.29.0.tgz#a43557a4aa612e838424457b7b20c8c6c0436f73"
+  dependencies:
+    "@glimmer/util" "^0.29.0"
+
 "@types/node@^6.0.46":
   version "6.0.78"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.78.tgz#5d4a3f579c1524e01ee21bf474e6fba09198f470"
@@ -1785,7 +1810,7 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
-handlebars@^4.0.3:
+handlebars@^4.0.3, handlebars@^4.0.6:
   version "4.0.10"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.10.tgz#3d30c718b09a3d96f23ea4cc1f403c4d3ba9ff4f"
   dependencies:
@@ -3721,6 +3746,10 @@ shellwords@^0.1.0:
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simple-html-tokenizer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.3.0.tgz#9b8b5559d80e331a544dd13dd59382e5d0d94411"
 
 slash@^1.0.0:
   version "1.0.0"
