@@ -5,9 +5,9 @@ const docBuilders = require("./doc-builders");
 const concat = docBuilders.concat;
 // const join = docBuilders.join;
 // const hardline = docBuilders.hardline;
-// const line = docBuilders.line;
+const line = docBuilders.line;
 // const softline = docBuilders.softline;
-// const group = docBuilders.group;
+const group = docBuilders.group;
 // const indent = docBuilders.indent;
 // const ifBreak = docBuilders.ifBreak;
 
@@ -24,6 +24,15 @@ function printPath(path, options, print) {
   switch (n.type) {
     case "Program": {
       return printChildren("body", path, print);
+    }
+
+    case "MustacheCommentStatement": {
+      const text = n.value.trim();
+      const hasBraces = text.includes("{{") || text.includes("}}");
+      const open = hasBraces ? "{{!--" : "{{!";
+      const close = hasBraces ? "--}}" : "}}";
+
+      return group(concat([open, line, text, line, close]));
     }
 
     default:
