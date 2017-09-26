@@ -6,7 +6,7 @@ const concat = docBuilders.concat;
 const join = docBuilders.join;
 // const line = docBuilders.line;
 const softline = docBuilders.softline;
-const hardline = docBuilders.softline;
+const hardline = docBuilders.hardline;
 // const group = docBuilders.group;
 const indent = docBuilders.indent;
 
