@@ -30,6 +30,9 @@ const parsers = {
   },
   get json() {
     return eval("require")("./parser-babylon");
+  },
+  get handlebars() {
+    return eval("require")("./parser-handlebars");
   }
 };
 
