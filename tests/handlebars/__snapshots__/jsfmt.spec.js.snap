@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getting_started.hbs 1`] = `
+<div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+        {{body}}
+    </div>
+</div>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<div class="entry"><h1>{{title}}</h1><div class="body">{{body}}</div></div>
+`;
